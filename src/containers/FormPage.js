@@ -32,8 +32,8 @@ const FormPage = () => {
   };
 
   return (
-    <PageBase title="Form Page"
-              navigation="Application / Form Page">
+    <PageBase title="Edit Page"
+              navigation="Application / Edit Page">
       <form>
 
         <TextField
@@ -42,23 +42,26 @@ const FormPage = () => {
           fullWidth={true}
         />
 
-        <SelectField
-          floatingLabelText="City"
-          value=""
-          fullWidth={true}>
-          <MenuItem key={0} primaryText="London"/>
-          <MenuItem key={1} primaryText="Paris"/>
-          <MenuItem key={2} primaryText="Rome"/>
-        </SelectField>
+        <TextField
+        hintText="Age"
+        floatingLabelText="Age"
+        fullWidth={true}
+      />
+
+      <TextField
+        hintText="University"
+        floatingLabelText="University"
+        fullWidth={true}
+      />
 
         <DatePicker
-          hintText="Expiration Date"
-          floatingLabelText="Expiration Date"
+          hintText="Graduation Date"
+          floatingLabelText="Graduation Date"
           fullWidth={true}/>
 
         <div style={styles.toggleDiv}>
           <Toggle
-            label="Disabled"
+            label=" Account Disabled"
             labelStyle={styles.toggleLabel}
           />
         </div>

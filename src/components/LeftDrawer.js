@@ -1,7 +1,7 @@
 import React,  { PropTypes } from 'react';
 import Drawer from 'material-ui/Drawer';
 import {spacing, typography} from 'material-ui/styles';
-import {white, blue600} from 'material-ui/styles/colors';
+import {white, orange500} from 'material-ui/styles/colors';
 import MenuItem from 'material-ui/MenuItem';
 import {Link} from 'react-router';
 import Avatar from 'material-ui/Avatar';
@@ -16,7 +16,7 @@ const LeftDrawer = (props) => {
       color: typography.textFullWhite,
       lineHeight: `${spacing.desktopKeylineIncrement}px`,
       fontWeight: typography.fontWeightLight,
-      backgroundColor: blue600,
+      backgroundColor: orange500,
       paddingLeft: 40,
       height: 56,
     },
@@ -51,10 +51,10 @@ const LeftDrawer = (props) => {
       docked={true}
       open={navDrawerOpen}>
         <div style={styles.logo}>
-          Material Admin
+          Monsta  Admin 
         </div>
         <div style={styles.avatar.div}>
-          <Avatar src="http://www.material-ui.com/images/uxceo-128.jpg"
+          <Avatar src="https://scontent.fkul10-1.fna.fbcdn.net/v/t31.0-8/21082796_10154703910572343_3805878827609674321_o.jpg?oh=f6fd1545c54b8a28fa60720b27a6bd54&oe=5A3F411C"
                   size={50}
                   style={styles.avatar.icon}/>
           <span style={styles.avatar.span}>{props.username}</span>

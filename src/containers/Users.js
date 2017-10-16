@@ -8,7 +8,7 @@ import {pink500, grey200, grey500} from 'material-ui/styles/colors';
 import PageBase from '../components/PageBase';
 import Data from '../data';
 
-const TablePage = () => {
+const Users = () => {
 
   const styles = {
     floatingActionButton: {
@@ -29,10 +29,10 @@ const TablePage = () => {
       name: {
         width: '40%'
       },
-      price: {
+      age: {
         width: '20%'
       },
-      category: {
+      university: {
         width: '20%'
       },
       edit: {
@@ -43,7 +43,7 @@ const TablePage = () => {
 
   return (
     <PageBase title="Table Page"
-              navigation="Application / Table Page">
+              navigation="Application / Users">
 
       <div>
         <Link to="/form" >
@@ -57,18 +57,18 @@ const TablePage = () => {
             <TableRow>
               <TableHeaderColumn style={styles.columns.id}>ID</TableHeaderColumn>
               <TableHeaderColumn style={styles.columns.name}>Name</TableHeaderColumn>
-              <TableHeaderColumn style={styles.columns.price}>Price</TableHeaderColumn>
-              <TableHeaderColumn style={styles.columns.category}>Category</TableHeaderColumn>
+              <TableHeaderColumn style={styles.columns.age}>Age</TableHeaderColumn>
+              <TableHeaderColumn style={styles.columns.university}>University</TableHeaderColumn>
               <TableHeaderColumn style={styles.columns.edit}>Edit</TableHeaderColumn>
             </TableRow>
           </TableHeader>
           <TableBody>
-            {Data.tablePage.items.map(item =>
+            {Data.users.items.map(item =>
               <TableRow key={item.id}>
                 <TableRowColumn style={styles.columns.id}>{item.id}</TableRowColumn>
                 <TableRowColumn style={styles.columns.name}>{item.name}</TableRowColumn>
-                <TableRowColumn style={styles.columns.price}>{item.price}</TableRowColumn>
-                <TableRowColumn style={styles.columns.category}>{item.category}</TableRowColumn>
+                <TableRowColumn style={styles.columns.age}>{item.age}</TableRowColumn>
+                <TableRowColumn style={styles.columns.university}>{item.university}</TableRowColumn>
                 <TableRowColumn style={styles.columns.edit}>
                   <Link className="button" to="/form">
                     <FloatingActionButton zDepth={0}
@@ -88,4 +88,4 @@ const TablePage = () => {
   );
 };
 
-export default TablePage;
+export default Users;

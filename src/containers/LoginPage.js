@@ -5,7 +5,6 @@ import RaisedButton from 'material-ui/RaisedButton';
 import FlatButton from 'material-ui/FlatButton';
 import Checkbox from 'material-ui/Checkbox';
 import {grey500, white} from 'material-ui/styles/colors';
-import PersonAdd from 'material-ui/svg-icons/social/person-add';
 import Help from 'material-ui/svg-icons/action/help';
 import TextField from 'material-ui/TextField';
 import {Link} from 'react-router';
@@ -111,29 +110,11 @@ const LoginPage = () => {
 
           <div style={styles.buttonsDiv}>
             <FlatButton
-              label="Register"
-              href="/"
-              style={styles.flatButton}
-              icon={<PersonAdd />}
-            />
-
-            <FlatButton
               label="Forgot Password?"
               href="/"
               style={styles.flatButton}
               icon={<Help />}
             />
-          </div>
-
-          <div style={styles.buttonsDiv}>
-            <Link to="/" style={{...styles.btn, ...styles.btnFacebook}}>
-              <i className="fa fa-facebook fa-lg"/>
-              <span style={styles.btnSpan}>Log in with Facebook</span>
-            </Link>
-            <Link to="/" style={{...styles.btn, ...styles.btnGoogle}}>
-              <i className="fa fa-google-plus fa-lg"/>
-              <span style={styles.btnSpan}>Log in with Google</span>
-            </Link>
           </div>
         </div>
       </div>

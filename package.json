@@ -1,7 +1,7 @@
 {
-  "name": "react-material-admin-template",
+  "name": "monsta-admin",
   "version": "0.0.1",
-  "description": "Admin template using React and Material-UI",
+  "description": "Monsta Admin",
   "engines": {
     "npm": ">=3"
   },
@@ -83,17 +83,5 @@
     "webpack-dev-middleware": "1.6.1",
     "webpack-hot-middleware": "2.12.2",
     "webpack-md5-hash": "0.0.5"
-  },
-  "keywords": [
-    "react",
-    "reactjs",
-    "material",
-    "material-ui",
-    "template",
-    "admin"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rafaelhz/react-material-admin-template"
   }
 }

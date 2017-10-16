@@ -1,4 +1,3 @@
-This is a simple responsive admin template using [React](https://facebook.github.io/react/) and [Material-UI](http://www.material-ui.com/) components.
 
 Installation / Running
 ----------------------
